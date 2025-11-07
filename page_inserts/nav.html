@@ -1,67 +1,56 @@
+<!-- /page_inserts/nav.html -->
 <!-- Created by Justin McNeal -->
-<nav class="sticky top-0 z-50 bg-[#d4af37]/95 backdrop-blur-md shadow-md border-b border-black/10">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-8">
-    
-    <!-- Mobile Menu Button -->
-    <button
-      id="menu-toggle"
-      class="md:hidden flex flex-col justify-center w-8 h-8 gap-1.5 group"
-      aria-label="Toggle navigation"
-    >
-      <span class="h-0.5 w-full bg-black transition-all group-hover:translate-x-0.5"></span>
-      <span class="h-0.5 w-full bg-black transition-all group-hover:translate-x-1"></span>
-      <span class="h-0.5 w-full bg-black transition-all group-hover:translate-x-1.5"></span>
-    </button>
-
+<nav class="sticky top-0 z-50 bg-[#d4af37]/95 backdrop-blur-md border-b border-black/10">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-2.5 gap-4">
     <!-- Logo -->
-    <a href="/" class="flex items-center gap-2">
+    <a data-link="home" href="#" class="flex items-center gap-2">
       <img
-        src="/images/brand/logo/01.png"
+        data-src="images/brand/logo/01.png"
         alt="Cozie Crown logo"
-        class="h-12 md:h-14 transition-transform duration-300 hover:scale-105"
+        class="h-10 md:h-12 transition-transform duration-300 hover:scale-105"
       />
-      <span class="hidden sm:inline-block font-semibold text-black text-lg tracking-wide">
+      <span class="hidden sm:inline-block font-semibold tracking-wide text-[#1a1a1a] text-lg">
         Cozie Crown
       </span>
     </a>
 
-    <!-- Desktop Links -->
-    <ul class="hidden md:flex gap-8 font-medium text-black tracking-wide">
-      <li><a href="/pages/catalog.html" class="hover:text-white transition">Catalog</a></li>
-      <li><a href="/pages/signup.html" class="hover:text-white transition">Sign Up</a></li>
-      <li><a href="/pages/best-seller.html" class="hover:text-white transition">Best Seller</a></li>
-      <li><a href="/pages/contact.html" class="hover:text-white transition">Contact</a></li>
-    </ul>
+    <div class="flex items-center gap-3">
+      <!-- Mobile menu button -->
+      <button
+        id="nav-menu-btn"
+        class="md:hidden flex flex-col justify-center w-8 h-8 gap-1"
+        aria-label="Toggle navigation"
+        aria-controls="nav-links"
+        aria-expanded="false"
+      >
+        <span class="h-0.5 w-full bg-black"></span>
+        <span class="h-0.5 w-full bg-black"></span>
+        <span class="h-0.5 w-full bg-black"></span>
+      </button>
 
-    <!-- Cart Button -->
-    <button
-      class="relative flex items-center gap-2 bg-white text-black text-sm font-medium px-4 py-1.5 rounded-full hover:bg-gray-100 transition"
-    >
-      <span>Cart</span>
-      <span
-        id="cart-count"
-        class="absolute -top-2 -right-2 bg-black text-white text-[10px] font-semibold px-1.5 py-0.5 rounded-full"
-        >0</span>
-    </button>
+      <!-- Cart -->
+      <button
+        class="relative flex items-center gap-2 bg-white text-[#1a1a1a] text-xs md:text-sm font-medium px-3 md:px-4 py-1.5 rounded-full hover:bg-gray-100 transition"
+      >
+        <span>Cart</span>
+        <span
+          id="cart-count"
+          class="inline-flex items-center justify-center min-w-[1.4rem] h-5 rounded-full bg-black text-white text-[10px] font-semibold px-1"
+        >
+          0
+        </span>
+      </button>
+    </div>
   </div>
 
-  <!-- Mobile Dropdown -->
-  <div
-    id="mobile-menu"
-    class="hidden flex-col bg-[#d4af37] border-t border-black/10 shadow-inner text-center text-black font-medium py-3 space-y-3 md:hidden"
+  <!-- Nav links -->
+  <ul
+    id="nav-links"
+    class="hidden md:flex md:justify-center md:items-center md:gap-8 text-sm font-medium text-[#1a1a1a] px-4 pb-3 md:px-0 md:pb-0 bg-[#d4af37]/95 md:bg-transparent border-t border-black/10 md:border-0"
   >
-    <a href="/pages/catalog.html" class="block hover:text-white transition">Catalog</a>
-    <a href="/pages/signup.html" class="block hover:text-white transition">Sign Up</a>
-    <a href="/pages/best-seller.html" class="block hover:text-white transition">Best Seller</a>
-    <a href="/pages/contact.html" class="block hover:text-white transition">Contact</a>
-  </div>
+    <li><a data-link="catalog" href="#" class="block py-1 hover:text-white transition-colors">Catalog</a></li>
+    <li><a data-link="signup" href="#" class="block py-1 hover:text-white transition-colors">Sign Up</a></li>
+    <li><a data-link="best" href="#" class="block py-1 hover:text-white transition-colors">Best Seller</a></li>
+    <li><a data-link="contact" href="#" class="block py-1 hover:text-white transition-colors">Contact</a></li>
+  </ul>
 </nav>
-
-<script>
-  // Simple mobile menu toggle
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>

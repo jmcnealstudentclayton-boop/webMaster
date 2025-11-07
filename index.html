@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cozie Crown — Stay Warm, Stay Stylish</title>
 
@@ -9,15 +9,14 @@
   <meta name="author" content="Justin McNeal" />
   <meta name="description" content="Cozie Crown — stylish satin-lined beanies designed for comfort, hair protection, and confidence. Shop cozy headwear, unique designs, and limited collections. Keywords: Cozie Crown, satin-lined beanie, fuzzy beanie, stylish headwear, comfort fashion." />
 
-  <!-- Optional local Tailwind build (if you have it) -->
+  <!-- Optional local Tailwind build -->
   <link rel="stylesheet" href="styles/tailwind.css" />
 
-  <!-- Tailwind via CDN (fine for this assignment) -->
+  <!-- Tailwind CDN (OK for class, ignore the console warning) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Page inserts (nav + footer) -->
-  <script type="module" src="/js/page_inserts/index.js" defer></script>
-  <script type="module" src="/js/pages/index/index.js" defer></script>
+  <!-- Main JS for homepage (loads nav + footer) -->
+  <script type="module" src="js/index.js" defer></script>
 </head>
 
 <body class="bg-white text-gray-900 font-sans antialiased">
@@ -25,7 +24,6 @@
   <header id="nav-root" aria-label="Primary navigation"></header>
 
   <main>
-
     <!-- HERO / BANNER -->
     <section class="relative">
       <img
@@ -43,7 +41,7 @@
     <section class="py-14 text-center">
       <h2 class="text-2xl md:text-3xl font-semibold mb-8">Items on Sale</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
-        <a href="catalog.html" class="group">
+        <a href="pages/catalog.html" class="group">
           <div class="overflow-hidden rounded-2xl shadow-sm">
             <img
               src="images/products/bunnyear/Black01.jpg"
@@ -54,7 +52,7 @@
           <p class="mt-2 font-medium">$20</p>
         </a>
 
-        <a href="catalog.html" class="group">
+        <a href="pages/catalog.html" class="group">
           <div class="overflow-hidden rounded-2xl shadow-sm">
             <img
               src="images/products/catear/A01.jpg"
@@ -65,7 +63,7 @@
           <p class="mt-2 font-medium">$20</p>
         </a>
 
-        <a href="catalog.html" class="group">
+        <a href="pages/catalog.html" class="group">
           <div class="overflow-hidden rounded-2xl shadow-sm">
             <img
               src="images/products/fuzzycat/Red01.jpg"
@@ -86,7 +84,7 @@
           Enjoy <span class="font-bold text-emerald-400">$5 Off</span> your first order!
         </p>
         <a
-          href="signup.html"
+          href="pages/signup.html"
           class="inline-block mt-4 bg-white text-black font-medium px-6 py-2 rounded-full hover:bg-gray-100 transition"
         >
           Claim Coupon
@@ -125,7 +123,7 @@
           </div>
 
           <a
-            href="catalog.html"
+            href="pages/catalog.html"
             class="block w-full text-center py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-100 transition"
           >
             View in Catalog
@@ -146,7 +144,6 @@
         </figure>
       </div>
     </section>
-
   </main>
 
   <!-- FOOTER INSERT ROOT -->

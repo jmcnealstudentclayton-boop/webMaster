@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cozie Crown — Catalog</title>
 
@@ -9,10 +9,11 @@
   <meta name="author" content="Justin McNeal" />
   <meta name="description" content="Browse the Cozie Crown catalog — discover our satin-lined beanies, cozy winter hats, and trendy accessories in every color. Keywords: Cozie Crown catalog, beanie collection, fuzzy hats, satin-lined headwear, fashion accessories." />
 
-  <link rel="stylesheet" href="styles/tailwind.css" />
+  <link rel="stylesheet" href="../styles/tailwind.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="js/page_inserts/index.js" defer></script>
-   <script type="module" src="/js/pages/index/index.js" defer></script>
+
+  <!-- Inserts (nav + footer) -->
+  <script type="module" src="../js/page_inserts/index.js" defer></script>
 </head>
 
 <body class="bg-white text-gray-900 font-sans antialiased">
@@ -22,11 +23,10 @@
     <section class="mb-8">
       <h1 class="text-3xl font-semibold mb-2">Catalog</h1>
       <p class="text-sm text-gray-700">
-        Explore all Cozie Crown satin-lined beanies and cozy accessories. Use this page to browse styles, colors, and textures.
+        Explore all Cozie Crown satin-lined beanies and cozy accessories.
       </p>
     </section>
 
-    <!-- Example simple grid (static for assignment) -->
     <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <article class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
         <img
