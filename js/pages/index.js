@@ -1,7 +1,7 @@
 // /js/index.js
 // Home page JS: loads shared inserts, then any homepage-only behavior.
 
-import { loadPageInserts } from './page_inserts/index.js';
+import { loadPageInserts } from '../page_inserts/index.js';
 
 loadPageInserts().catch(console.error);
 

@@ -6,8 +6,8 @@ import { loadFooter } from './footer.js';
 
 export async function loadPageInserts() {
   // Resolve nav/footer HTML relative to THIS file, not the page URL
-  const navUrl = new URL('../../page_inserts/nav.html', import.meta.url);
-  const footerUrl = new URL('../../page_inserts/footer.html', import.meta.url);
+  const navUrl = new URL('/page_inserts/nav.html', import.meta.url);
+  const footerUrl = new URL('/page_inserts/footer.html', import.meta.url);
 
   await Promise.all([
     loadNav('#nav-root', navUrl),
