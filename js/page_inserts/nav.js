@@ -1,5 +1,4 @@
-// /js/page_inserts/nav.js
-// Loads nav.html and wires up menu, links, logo, and cart count.
+
 
 export async function loadNav(targetSelector = '#nav-root', url) {
   const root = document.querySelector(targetSelector);
@@ -19,23 +18,19 @@ async function fetchHTML(url) {
 
 function getBasePath() {
   const path = window.location.pathname;
-  // On GitHub Pages, your project lives under /webMaster/
   if (path.startsWith('/webMaster/')) return '/webMaster/';
-  // On local (VS Code Live Server), it's just /
   return '/';
 }
 
 function initNav(root) {
   const base = getBasePath();
 
-  // Set logo src based on base path
   const logoImg = root.querySelector('img[data-src]');
   if (logoImg) {
-    const assetPath = logoImg.getAttribute('data-src'); // e.g. "images/brand/logo/01.png"
+    const assetPath = logoImg.getAttribute('data-src'); 
     logoImg.src = base + assetPath;
   }
 
-  // Set links based on data-link attributes
   const routes = {
     home: 'index.html',
     catalog: 'pages/catalog.html',
@@ -51,7 +46,6 @@ function initNav(root) {
     a.href = base + rel;
   });
 
-  // Mobile toggle
   const btn = root.querySelector('#nav-menu-btn');
   const links = root.querySelector('#nav-links');
   if (btn && links) {
@@ -62,7 +56,6 @@ function initNav(root) {
     btn.addEventListener('click', toggle);
   }
 
-  // Scroll shadow
   const nav = root.querySelector('nav');
   let lastY = window.scrollY;
   const onScroll = () => {
@@ -74,7 +67,6 @@ function initNav(root) {
   };
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  // Active link highlight
   const currentPath = window.location.pathname;
   root.querySelectorAll('a[data-link]').forEach((a) => {
     const key = a.getAttribute('data-link');
@@ -90,8 +82,6 @@ function initNav(root) {
       a.classList.add('underline');
     }
   });
-
-  // Cart count from localStorage
   const countEl = root.querySelector('#cart-count');
   if (countEl) {
     try {

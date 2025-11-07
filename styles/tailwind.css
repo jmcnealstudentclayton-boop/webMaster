@@ -1,4 +1,3 @@
-/* Cozie Crown — lightweight custom styles (works without a Tailwind build step) */
 :root {
     --cc-bg: #faf3e0;
     /* paper-cream */
@@ -16,7 +15,6 @@ body {
 }
 
 
-/* Simple card helper for product tiles (optional) */
 .cc-card {
     border-radius: 0.75rem;
     overflow: hidden;
@@ -29,13 +27,11 @@ body {
 }
 
 
-/* Link underline style used site‑wide */
 .cc-link {
     text-underline-offset: 2px;
 }
 
 
-/* Button baseline (overridden by Tailwind utilities on elements) */
 .cc-btn {
     border: 1px solid #e5e7eb;
     background: #fff;
@@ -48,7 +44,6 @@ body {
 }
 
 
-/* Footer microtype */
 footer small,
 footer .muted {
     color: rgba(0, 0, 0, .6);

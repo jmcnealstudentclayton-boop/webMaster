@@ -2,11 +2,9 @@ import { loadNav } from './nav.js';
 import { loadFooter } from './footer.js';
 
 export async function loadPageInserts() {
-  // Detect base path (GitHub vs local)
   const isGithub = window.location.hostname.includes('github.io');
   const basePath = isGithub ? '/webMaster' : '';
 
-  // Build correct paths for both environments
   const navUrl = new URL(`${basePath}/page_inserts/nav.html`, window.location.origin);
   const footerUrl = new URL(`${basePath}/page_inserts/footer.html`, window.location.origin);
 

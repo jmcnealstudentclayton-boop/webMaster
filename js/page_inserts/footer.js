@@ -1,5 +1,4 @@
-// /js/page_inserts/footer.js
-// Loads footer.html and sets year, last modified, and footer links.
+
 
 export async function loadFooter(targetSelector = '#footer-root', url) {
   const root = document.querySelector(targetSelector);
@@ -10,11 +9,9 @@ export async function loadFooter(targetSelector = '#footer-root', url) {
 
   const base = getBasePath();
 
-  // Set year
   const yearEl = root.querySelector('#year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Set last modified
   const lastEl = root.querySelector('#lastModified');
   if (lastEl) {
     const lastMod = new Date(document.lastModified);
@@ -24,7 +21,6 @@ export async function loadFooter(targetSelector = '#footer-root', url) {
     });
   }
 
-  // Footer links
   const routes = {
     home: 'index.html',
     catalog: 'pages/catalog.html',

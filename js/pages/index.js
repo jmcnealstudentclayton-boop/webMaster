@@ -1,11 +1,9 @@
-// /js/index.js
-// Home page JS: loads shared inserts, then any homepage-only behavior.
+
 
 import { loadPageInserts } from '../page_inserts/index.js';
 
 loadPageInserts().catch(console.error);
 
-// Simple banner text fade-in
 const onReady = () => {
   const bannerText = document.querySelector('section.relative div');
   if (!bannerText) return;

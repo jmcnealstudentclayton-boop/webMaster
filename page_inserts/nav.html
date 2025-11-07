@@ -1,56 +1,67 @@
-<!-- /page_inserts/nav.html -->
-<!-- Created by Justin McNeal -->
-<nav class="sticky top-0 z-50 bg-[#d4af37]/95 backdrop-blur-md border-b border-black/10">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-2.5 gap-4">
+<nav class="sticky top-0 z-50 bg-[#d4af37]/95 backdrop-blur-md shadow-sm border-b border-black/10">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+
     <!-- Logo -->
     <a data-link="home" href="#" class="flex items-center gap-2">
       <img
         data-src="images/brand/logo/01.png"
         alt="Cozie Crown logo"
-        class="h-10 md:h-12 transition-transform duration-300 hover:scale-105"
+        class="h-9 md:h-10 transition-transform duration-300 hover:scale-105"
       />
-      <span class="hidden sm:inline-block font-semibold tracking-wide text-[#1a1a1a] text-lg">
+      <span class="font-semibold text-lg md:text-xl tracking-wide text-black hover:underline">
         Cozie Crown
       </span>
     </a>
 
+    <!-- Desktop Links -->
+    <ul
+      id="nav-links"
+      class="hidden md:flex gap-8 font-medium text-sm text-black"
+    >
+      <li><a data-link="catalog" href="#" class="hover:text-white transition">Catalog</a></li>
+      <li><a data-link="signup" href="#" class="hover:text-white transition">Sign Up</a></li>
+      <li><a data-link="best" href="#" class="hover:text-white transition">Best Seller</a></li>
+      <li><a data-link="contact" href="#" class="hover:text-white transition">Contact</a></li>
+    </ul>
+
+    <!-- Right Side (Cart + Menu) -->
     <div class="flex items-center gap-3">
-      <!-- Mobile menu button -->
+      <!-- Cart -->
+      <button
+        class="flex items-center gap-2 bg-white text-black text-xs md:text-sm font-medium px-3 md:px-4 py-1.5 rounded-full shadow-sm hover:bg-gray-100 transition"
+      >
+        <span>Cart</span>
+        <span
+          id="cart-count"
+          class="inline-flex items-center justify-center min-w-[1.2rem] h-5 rounded-full bg-black text-white text-[10px] font-semibold px-1"
+        >
+          0
+        </span>
+      </button>
+
+      <!-- Mobile Menu Button -->
       <button
         id="nav-menu-btn"
-        class="md:hidden flex flex-col justify-center w-8 h-8 gap-1"
+        class="md:hidden flex flex-col justify-center w-8 h-8 gap-1.5"
         aria-label="Toggle navigation"
-        aria-controls="nav-links"
+        aria-controls="mobile-links"
         aria-expanded="false"
       >
         <span class="h-0.5 w-full bg-black"></span>
         <span class="h-0.5 w-full bg-black"></span>
         <span class="h-0.5 w-full bg-black"></span>
       </button>
-
-      <!-- Cart -->
-      <button
-        class="relative flex items-center gap-2 bg-white text-[#1a1a1a] text-xs md:text-sm font-medium px-3 md:px-4 py-1.5 rounded-full hover:bg-gray-100 transition"
-      >
-        <span>Cart</span>
-        <span
-          id="cart-count"
-          class="inline-flex items-center justify-center min-w-[1.4rem] h-5 rounded-full bg-black text-white text-[10px] font-semibold px-1"
-        >
-          0
-        </span>
-      </button>
     </div>
   </div>
 
-  <!-- Nav links -->
+  <!-- Mobile Dropdown -->
   <ul
-    id="nav-links"
-    class="hidden md:flex md:justify-center md:items-center md:gap-8 text-sm font-medium text-[#1a1a1a] px-4 pb-3 md:px-0 md:pb-0 bg-[#d4af37]/95 md:bg-transparent border-t border-black/10 md:border-0"
+    id="mobile-links"
+    class="hidden md:hidden flex-col items-center gap-4 bg-[#d4af37]/95 text-black font-medium py-4 border-t border-black/10"
   >
-    <li><a data-link="catalog" href="#" class="block py-1 hover:text-white transition-colors">Catalog</a></li>
-    <li><a data-link="signup" href="#" class="block py-1 hover:text-white transition-colors">Sign Up</a></li>
-    <li><a data-link="best" href="#" class="block py-1 hover:text-white transition-colors">Best Seller</a></li>
-    <li><a data-link="contact" href="#" class="block py-1 hover:text-white transition-colors">Contact</a></li>
+    <li><a data-link="catalog" href="#" class="hover:text-white transition">Catalog</a></li>
+    <li><a data-link="signup" href="#" class="hover:text-white transition">Sign Up</a></li>
+    <li><a data-link="best" href="#" class="hover:text-white transition">Best Seller</a></li>
+    <li><a data-link="contact" href="#" class="hover:text-white transition">Contact</a></li>
   </ul>
 </nav>
