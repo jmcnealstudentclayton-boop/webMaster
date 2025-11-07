@@ -1,0 +1,55 @@
+/* Cozie Crown — lightweight custom styles (works without a Tailwind build step) */
+:root {
+    --cc-bg: #faf3e0;
+    /* paper-cream */
+    --cc-ink: #1a1a1a;
+    /* deep ink */
+    --cc-gold: #d4af37;
+    /* brand gold */
+}
+
+
+html,
+body {
+    color: var(--cc-ink);
+    background: var(--cc-bg);
+}
+
+
+/* Simple card helper for product tiles (optional) */
+.cc-card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.cc-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Link underline style used site‑wide */
+.cc-link {
+    text-underline-offset: 2px;
+}
+
+
+/* Button baseline (overridden by Tailwind utilities on elements) */
+.cc-btn {
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    border-radius: .5rem;
+    padding: .5rem .75rem;
+}
+
+.cc-btn:hover {
+    background: #f3f4f6;
+}
+
+
+/* Footer microtype */
+footer small,
+footer .muted {
+    color: rgba(0, 0, 0, .6);
+}

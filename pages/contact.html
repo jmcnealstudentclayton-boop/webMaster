@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- SEO Meta Tags -->
+<meta name="author" content="Justin McNeal" />
+<meta name="description" content="Contact Cozie Crown for customer support, order questions, or brand inquiries. We're here to help you stay cozy and confident. Keywords: Cozie Crown contact, customer support, email Cozie Crown, help, order assistance." />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact • Cozie Crown</title>
+    <link rel="stylesheet" href="/styles/tailwind.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load inserts on this page too -->
+    <script type="module">
+        import { loadPageInserts } from '/js/page_inserts/index.js';
+        loadPageInserts();
+    </script>
+</head>
+
+<body class="mx-5">
+    <header id="nav-root" aria-label="Primary Navigation"></header>
+
+
+    <main class="max-w-2xl mx-auto my-10">
+        <h1 class="text-2xl font-bold mb-2">Contact Us</h1>
+        <p class="text-sm mb-6">Have a question about Cozie Crown? Send us a message.</p>
+
+
+        <form class="space-y-4" action="#" method="post"
+            onsubmit="event.preventDefault(); alert('Message sent (demo)');">
+            <div>
+                <label for="name" class="block text-sm font-medium mb-1">Name</label>
+                <input id="name" name="name" type="text" required
+                    class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-black/20" />
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                <input id="email" name="email" type="email" required
+                    class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-black/20" />
+            </div>
+            <div>
+                <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+                <input id="subject" name="subject" type="text"
+                    class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-black/20" />
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                    class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-black/20"></textarea>
+            </div>
+            <button type="submit" class="cc-btn">Send Message</button>
+        </form>
+    </main>
+
+
+    <footer id="footer-root" class="my-6 md:mx-40"></footer>
+</body>
+
+</html>

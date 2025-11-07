@@ -1,0 +1,67 @@
+<!-- Created by Justin McNeal -->
+<nav class="sticky top-0 z-50 bg-[#d4af37]/95 backdrop-blur-md shadow-md border-b border-black/10">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-8">
+    
+    <!-- Mobile Menu Button -->
+    <button
+      id="menu-toggle"
+      class="md:hidden flex flex-col justify-center w-8 h-8 gap-1.5 group"
+      aria-label="Toggle navigation"
+    >
+      <span class="h-0.5 w-full bg-black transition-all group-hover:translate-x-0.5"></span>
+      <span class="h-0.5 w-full bg-black transition-all group-hover:translate-x-1"></span>
+      <span class="h-0.5 w-full bg-black transition-all group-hover:translate-x-1.5"></span>
+    </button>
+
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2">
+      <img
+        src="/images/brand/logo/01.png"
+        alt="Cozie Crown logo"
+        class="h-12 md:h-14 transition-transform duration-300 hover:scale-105"
+      />
+      <span class="hidden sm:inline-block font-semibold text-black text-lg tracking-wide">
+        Cozie Crown
+      </span>
+    </a>
+
+    <!-- Desktop Links -->
+    <ul class="hidden md:flex gap-8 font-medium text-black tracking-wide">
+      <li><a href="/pages/catalog.html" class="hover:text-white transition">Catalog</a></li>
+      <li><a href="/pages/signup.html" class="hover:text-white transition">Sign Up</a></li>
+      <li><a href="/pages/best-seller.html" class="hover:text-white transition">Best Seller</a></li>
+      <li><a href="/pages/contact.html" class="hover:text-white transition">Contact</a></li>
+    </ul>
+
+    <!-- Cart Button -->
+    <button
+      class="relative flex items-center gap-2 bg-white text-black text-sm font-medium px-4 py-1.5 rounded-full hover:bg-gray-100 transition"
+    >
+      <span>Cart</span>
+      <span
+        id="cart-count"
+        class="absolute -top-2 -right-2 bg-black text-white text-[10px] font-semibold px-1.5 py-0.5 rounded-full"
+        >0</span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div
+    id="mobile-menu"
+    class="hidden flex-col bg-[#d4af37] border-t border-black/10 shadow-inner text-center text-black font-medium py-3 space-y-3 md:hidden"
+  >
+    <a href="/pages/catalog.html" class="block hover:text-white transition">Catalog</a>
+    <a href="/pages/signup.html" class="block hover:text-white transition">Sign Up</a>
+    <a href="/pages/best-seller.html" class="block hover:text-white transition">Best Seller</a>
+    <a href="/pages/contact.html" class="block hover:text-white transition">Contact</a>
+  </div>
+</nav>
+
+<script>
+  // Simple mobile menu toggle
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>

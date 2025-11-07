@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- SEO Meta Tags -->
+<meta name="author" content="Justin McNeal" />
+<meta name="description" content="Browse the Cozie Crown catalog — discover our satin-lined beanies, cozy winter hats, and trendy accessories in every color. Keywords: Cozie Crown catalog, beanie collection, fuzzy hats, satin-lined headwear, fashion accessories." />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catalog • Cozie Crown</title>
+    <link rel="stylesheet" href="/styles/tailwind.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import { loadPageInserts } from "/js/page_inserts/index.js";
+        loadPageInserts();
+    </script>
+</head>
+
+<body class="mx-5">
+    <header id="nav-root" aria-label="Primary Navigation"></header>
+
+
+    <main class="max-w-6xl mx-auto my-10">
+        <h1 class="text-2xl font-bold mb-2">Catalog</h1>
+        <p class="text-sm mb-6">Browse the latest from Cozie Crown.</p>
+
+
+        <!-- Simple filters (non-functional demo) -->
+        <div class="flex flex-wrap items-center gap-2 mb-6">
+            <button class="cc-btn">All</button>
+            <button class="cc-btn">Cat Ears</button>
+            <button class="cc-btn">Bunny Ears</button>
+            <button class="cc-btn">Fuzzy</button>
+        </div>
+
+
+        <!-- Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Card template -->
+            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
+                <img src="/images/products/catear/A01.jpg" alt="Cat Ear Beanie — Cream"
+                    class="w-full h-auto rounded-lg cc-card" />
+                <div class="mt-2">
+                    <h2 class="font-semibold text-sm">Cat Ear Beanie — Cream</h2>
+                    <p class="text-sm">$20</p>
+                </div>
+            </a>
+            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
+                <img src="/images/products/bunnyear/Black01.jpg" alt="Bunny Ear Beanie — Black"
+                    class="w-full h-auto rounded-lg cc-card" />
+                <div class="mt-2">
+                    <h2 class="font-semibold text-sm">Bunny Ear Beanie — Black</h2>
+                    <p class="text-sm">$20</p>
+                </div>
+            </a>
+            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
+                <img src="/images/products/fuzzycat/Red01.jpg" alt="Fuzzy Cat Beanie — Red"
+                    class="w-full h-auto rounded-lg cc-card" />
+                <div class="mt-2">
+                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Red</h2>
+                    <p class="text-sm">$20</p>
+                </div>
+            </a>
+            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
+                <img src="/images/products/fuzzycat/A01.jpg" alt="Fuzzy Cat Beanie — Cream"
+                    class="w-full h-auto rounded-lg cc-card" />
+                <div class="mt-2">
+                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Cream</h2>
+                    <p class="text-sm">$20</p>
+                </div>
+            </a>
+            <!-- Duplicate a few more as placeholders -->
+            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
+                <img src="/images/products/catear/A01.jpg" alt="Cat Ear Beanie — Cream"
+                    class="w-full h-auto rounded-lg cc-card" />
+                <div class="mt-2">
+                    <h2 class="font-semibold text-sm">Cat Ear Beanie — Cream</h2>
+                    <p class="text-sm">$20</p>
+                </div>
+            </a>
+            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
+                <img src="/images/products/bunnyear/Black01.jpg" alt="Bunny Ear Beanie — Black"
+                    class="w-full h-auto rounded-lg cc-card" />
+                <div class="mt-2">
+                    <h2 class="font-semibold text-sm">Bunny Ear Beanie — Black</h2>
+                    <p class="text-sm">$20</p>
+                </div>
+            </a>
+            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
+                <img src="/images/products/fuzzycat/Red01.jpg" alt="Fuzzy Cat Beanie — Red"
+                    class="w-full h-auto rounded-lg cc-card" />
+                <div class="mt-2">
+                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Red</h2>
+                    <p class="text-sm">$20</p>
+                </div>
+            </a>
+            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
+                <img src="/images/products/fuzzycat/A01.jpg" alt="Fuzzy Cat Beanie — Cream"
+                    class="w-full h-auto rounded-lg cc-card" />
+                <div class="mt-2">
+                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Cream</h2>
+                    <p class="text-sm">$20</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+
+    <footer id="footer-root" class="my-6 md:mx-40"></footer>
+</body>
+
+</html>
