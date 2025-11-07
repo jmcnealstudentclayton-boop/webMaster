@@ -1,113 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- SEO Meta Tags -->
-<meta name="author" content="Justin McNeal" />
-<meta name="description" content="Browse the Cozie Crown catalog — discover our satin-lined beanies, cozy winter hats, and trendy accessories in every color. Keywords: Cozie Crown catalog, beanie collection, fuzzy hats, satin-lined headwear, fashion accessories." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cozie Crown — Catalog</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Catalog • Cozie Crown</title>
-    <link rel="stylesheet" href="/styles/tailwind.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module">
-        import { loadPageInserts } from "/js/page_inserts/index.js";
-        loadPageInserts();
-    </script>
+  <!-- SEO -->
+  <meta name="author" content="Justin McNeal" />
+  <meta name="description" content="Browse the Cozie Crown catalog — discover our satin-lined beanies, cozy winter hats, and trendy accessories in every color. Keywords: Cozie Crown catalog, beanie collection, fuzzy hats, satin-lined headwear, fashion accessories." />
+
+  <link rel="stylesheet" href="styles/tailwind.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="js/page_inserts/index.js" defer></script>
 </head>
 
-<body class="mx-5">
-    <header id="nav-root" aria-label="Primary Navigation"></header>
+<body class="bg-white text-gray-900 font-sans antialiased">
+  <header id="nav-root" aria-label="Primary navigation"></header>
 
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <section class="mb-8">
+      <h1 class="text-3xl font-semibold mb-2">Catalog</h1>
+      <p class="text-sm text-gray-700">
+        Explore all Cozie Crown satin-lined beanies and cozy accessories. Use this page to browse styles, colors, and textures.
+      </p>
+    </section>
 
-    <main class="max-w-6xl mx-auto my-10">
-        <h1 class="text-2xl font-bold mb-2">Catalog</h1>
-        <p class="text-sm mb-6">Browse the latest from Cozie Crown.</p>
-
-
-        <!-- Simple filters (non-functional demo) -->
-        <div class="flex flex-wrap items-center gap-2 mb-6">
-            <button class="cc-btn">All</button>
-            <button class="cc-btn">Cat Ears</button>
-            <button class="cc-btn">Bunny Ears</button>
-            <button class="cc-btn">Fuzzy</button>
+    <!-- Example simple grid (static for assignment) -->
+    <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <article class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <img
+          src="images/products/bunnyear/Black01.jpg"
+          alt="Black Bunny Ear Beanie"
+          class="w-full h-52 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Black Bunny Ear Beanie</h2>
+          <p class="text-sm text-gray-600 mb-2">Soft, playful, and lined for comfort.</p>
+          <p class="font-medium">$20</p>
         </div>
+      </article>
 
-
-        <!-- Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Card template -->
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/catear/A01.jpg" alt="Cat Ear Beanie — Cream"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Cat Ear Beanie — Cream</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/bunnyear/Black01.jpg" alt="Bunny Ear Beanie — Black"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Bunny Ear Beanie — Black</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/fuzzycat/Red01.jpg" alt="Fuzzy Cat Beanie — Red"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Red</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/fuzzycat/A01.jpg" alt="Fuzzy Cat Beanie — Cream"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Cream</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <!-- Duplicate a few more as placeholders -->
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/catear/A01.jpg" alt="Cat Ear Beanie — Cream"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Cat Ear Beanie — Cream</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/bunnyear/Black01.jpg" alt="Bunny Ear Beanie — Black"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Bunny Ear Beanie — Black</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/fuzzycat/Red01.jpg" alt="Fuzzy Cat Beanie — Red"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Red</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/fuzzycat/A01.jpg" alt="Fuzzy Cat Beanie — Cream"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Cream</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
+      <article class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <img
+          src="images/products/catear/A01.jpg"
+          alt="Cream Cat Ear Beanie"
+          class="w-full h-52 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Cream Cat Ear Beanie</h2>
+          <p class="text-sm text-gray-600 mb-2">Cute cat ears with a satin-lined interior.</p>
+          <p class="font-medium">$20</p>
         </div>
-    </main>
+      </article>
 
+      <article class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <img
+          src="images/products/fuzzycat/Red01.jpg"
+          alt="Red Fuzzy Cat Beanie"
+          class="w-full h-52 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Red Fuzzy Cat Beanie</h2>
+          <p class="text-sm text-gray-600 mb-2">Bold color with a soft fuzzy finish.</p>
+          <p class="font-medium">$20</p>
+        </div>
+      </article>
+    </section>
+  </main>
 
-    <footer id="footer-root" class="my-6 md:mx-40"></footer>
+  <footer id="footer-root" class="mt-10"></footer>
 </body>
-
 </html>

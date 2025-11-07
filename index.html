@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- SEO Meta Tags -->
-<meta name="author" content="Justin McNeal" />
-<meta name="description" content="Cozie Crown — stylish satin-lined beanies designed for comfort, hair protection, and confidence. Shop cozy headwear, unique designs, and limited collections. Keywords: Cozie Crown, satin-lined beanie, fuzzy beanie, stylish headwear, comfort fashion." />
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cozie Crown — Stay Warm, Stay Stylish</title>
+
+  <!-- SEO -->
+  <meta name="author" content="Justin McNeal" />
+  <meta name="description" content="Cozie Crown — stylish satin-lined beanies designed for comfort, hair protection, and confidence. Shop cozy headwear, unique designs, and limited collections. Keywords: Cozie Crown, satin-lined beanie, fuzzy beanie, stylish headwear, comfort fashion." />
+
+  <!-- Optional local Tailwind build (if you have it) -->
+  <link rel="stylesheet" href="styles/tailwind.css" />
+
+  <!-- Tailwind via CDN (fine for this assignment) -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="/images/favicon.png" />
-  <script type="module" src="/js/pages/index/index.js" defer></script>
+
+  <!-- Page inserts (nav + footer) -->
+  <script type="module" src="js/page_inserts/index.js" defer></script>
 </head>
 
 <body class="bg-white text-gray-900 font-sans antialiased">
-
-  <!-- NAVBAR -->
-  <header id="nav-root" class="sticky top-0 bg-white/70 backdrop-blur-md shadow-sm z-50"></header>
+  <!-- NAV INSERT ROOT -->
+  <header id="nav-root" aria-label="Primary navigation"></header>
 
   <main>
 
     <!-- HERO / BANNER -->
     <section class="relative">
-      <img src="/images/products/catear/Banner01.jpg"
-           alt="Cozie Crown banner featuring beanies"
-           class="w-full h-[70vh] object-cover object-center" />
+      <img
+        src="images/products/catear/Banner01.jpg"
+        alt="Cozie Crown banner featuring beanies"
+        class="w-full h-[70vh] object-cover object-center"
+      />
       <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white">
         <h1 class="text-4xl md:text-5xl font-bold tracking-wide mb-2">Welcome to</h1>
         <p class="text-2xl md:text-3xl font-light">Cozie Crown</p>
       </div>
     </section>
 
-    <!-- SALE ITEMS -->
+    <!-- ITEMS ON SALE -->
     <section class="py-14 text-center">
       <h2 class="text-2xl md:text-3xl font-semibold mb-8">Items on Sale</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
-        <a href="/" class="group">
+        <a href="catalog.html" class="group">
           <div class="overflow-hidden rounded-2xl shadow-sm">
-            <img src="/images/products/bunnyear/Black01.jpg"
-                 alt="Black Bunny Ear Beanie"
-                 class="w-full h-auto group-hover:scale-105 transition-transform duration-300" />
+            <img
+              src="images/products/bunnyear/Black01.jpg"
+              alt="Black Bunny Ear Beanie"
+              class="w-full h-auto group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
           <p class="mt-2 font-medium">$20</p>
         </a>
 
-        <a href="/" class="group">
+        <a href="catalog.html" class="group">
           <div class="overflow-hidden rounded-2xl shadow-sm">
-            <img src="/images/products/catear/A01.jpg"
-                 alt="Cream Cat Ear Beanie"
-                 class="w-full h-auto group-hover:scale-105 transition-transform duration-300" />
+            <img
+              src="images/products/catear/A01.jpg"
+              alt="Cream Cat Ear Beanie"
+              class="w-full h-auto group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
           <p class="mt-2 font-medium">$20</p>
         </a>
 
-        <a href="/" class="group">
+        <a href="catalog.html" class="group">
           <div class="overflow-hidden rounded-2xl shadow-sm">
-            <img src="/images/products/fuzzycat/Red01.jpg"
-                 alt="Red Fuzzy Cat Beanie"
-                 class="w-full h-auto group-hover:scale-105 transition-transform duration-300" />
+            <img
+              src="images/products/fuzzycat/Red01.jpg"
+              alt="Red Fuzzy Cat Beanie"
+              class="w-full h-auto group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
           <p class="mt-2 font-medium">$20</p>
         </a>
@@ -68,8 +81,13 @@
     <section class="bg-black text-white py-10">
       <div class="max-w-4xl mx-auto text-center space-y-2">
         <h2 class="text-2xl font-semibold">New Here?</h2>
-        <p class="text-lg">Enjoy <span class="font-bold text-emerald-400">$5 Off</span> your first order!</p>
-        <a href="/" class="inline-block mt-4 bg-white text-black font-medium px-6 py-2 rounded-full hover:bg-gray-100 transition">
+        <p class="text-lg">
+          Enjoy <span class="font-bold text-emerald-400">$5 Off</span> your first order!
+        </p>
+        <a
+          href="signup.html"
+          class="inline-block mt-4 bg-white text-black font-medium px-6 py-2 rounded-full hover:bg-gray-100 transition"
+        >
           Claim Coupon
         </a>
       </div>
@@ -105,17 +123,22 @@
             <span class="h-6 w-6 rounded-full bg-red-600"></span>
           </div>
 
-          <button class="w-full py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-100 transition">
-            Add to Cart
-          </button>
+          <a
+            href="catalog.html"
+            class="block w-full text-center py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-100 transition"
+          >
+            View in Catalog
+          </a>
           <p class="text-xs text-gray-400 mt-3">Ships in 1–2 business days</p>
         </article>
 
         <!-- Product Image -->
         <figure class="relative overflow-hidden rounded-2xl shadow-lg">
-          <img src="/images/products/fuzzycat/A01.jpg"
-               alt="Cozie Crown Fuzzy Beanie in Cream"
-               class="w-full h-[26rem] object-cover transition-transform duration-300 hover:scale-105" />
+          <img
+            src="images/products/fuzzycat/A01.jpg"
+            alt="Cozie Crown Fuzzy Beanie in Cream"
+            class="w-full h-[26rem] object-cover transition-transform duration-300 hover:scale-105"
+          />
           <figcaption class="absolute bottom-3 left-3 bg-black/60 text-xs px-3 py-1 rounded">
             Color: Cream • Model: Fuzzy Cat
           </figcaption>
@@ -125,12 +148,7 @@
 
   </main>
 
-  <!-- FOOTER -->
-  <footer id="footer-root" class="text-center text-sm text-gray-500 py-10">
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- FOOTER INSERT ROOT -->
+  <footer id="footer-root" class="mt-10"></footer>
 </body>
 </html>

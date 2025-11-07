@@ -1,89 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- SEO Meta Tags -->
-<meta name="author" content="Justin McNeal" />
-<meta name="description" content="Shop Cozie Crown best sellers — our most-loved satin-lined beanies and cozy favorites chosen by customers. Keywords: Cozie Crown best sellers, top beanies, customer favorites, trending hats, cozy fashion." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cozie Crown — Best Sellers</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Best Sellers • Cozie Crown</title>
-    <link rel="stylesheet" href="/styles/tailwind.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module">
-        import { loadPageInserts } from "/js/page_inserts/index.js";
-        loadPageInserts();
-    </script>
+  <!-- SEO -->
+  <meta name="author" content="Justin McNeal" />
+  <meta name="description" content="Shop Cozie Crown best sellers — our most-loved satin-lined beanies and cozy favorites chosen by customers. Keywords: Cozie Crown best sellers, top beanies, customer favorites, trending hats, cozy fashion." />
+
+  <link rel="stylesheet" href="styles/tailwind.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="js/page_inserts/index.js" defer></script>
 </head>
 
-<body class="mx-5">
-    <header id="nav-root" aria-label="Primary Navigation"></header>
+<body class="bg-white text-gray-900 font-sans antialiased">
+  <header id="nav-root" aria-label="Primary navigation"></header>
 
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <section class="mb-8">
+      <h1 class="text-3xl font-semibold mb-2">Best Sellers</h1>
+      <p class="text-sm text-gray-700">
+        These are the Cozie Crown pieces customers love the most — cozy, stylish, and ready for everyday wear.
+      </p>
+    </section>
 
-    <main class="max-w-5xl mx-auto my-10">
-        <h1 class="text-2xl font-bold mb-2">Best Sellers</h1>
-        <p class="text-sm mb-6">Our most-loved picks from the Cozie Crown community.</p>
-
-
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <!-- Item -->
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/catear/A01.jpg" alt="Cat Ear Beanie — Cream"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Cat Ear Beanie — Cream</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <!-- Item -->
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/bunnyear/Black01.jpg" alt="Bunny Ear Beanie — Black"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Bunny Ear Beanie — Black</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <!-- Item -->
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/fuzzycat/Red01.jpg" alt="Fuzzy Cat Beanie — Red"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Red</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <!-- More placeholders -->
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/fuzzycat/A01.jpg" alt="Fuzzy Cat Beanie — Cream"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Fuzzy Cat Beanie — Cream</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/catear/A01.jpg" alt="Cat Ear Beanie — Cream"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Cat Ear Beanie — Cream</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
-            <a href="#" class="block transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5">
-                <img src="/images/products/bunnyear/Black01.jpg" alt="Bunny Ear Beanie — Black"
-                    class="w-full h-auto rounded-lg cc-card" />
-                <div class="mt-2">
-                    <h2 class="font-semibold text-sm">Bunny Ear Beanie — Black</h2>
-                    <p class="text-sm">$20</p>
-                </div>
-            </a>
+    <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <article class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <img
+          src="images/products/fuzzycat/A01.jpg"
+          alt="Cozie Crown Fuzzy Beanie in Cream"
+          class="w-full h-52 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Fuzzy Beanie — Cream</h2>
+          <p class="text-sm text-gray-600 mb-2">Top-rated for softness and hair protection.</p>
+          <p class="font-medium">$20</p>
         </div>
-    </main>
+      </article>
 
+      <article class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <img
+          src="images/products/catear/A01.jpg"
+          alt="Cream Cat Ear Beanie"
+          class="w-full h-52 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Cream Cat Ear Beanie</h2>
+          <p class="text-sm text-gray-600 mb-2">Cute and cozy — a customer favorite.</p>
+          <p class="font-medium">$20</p>
+        </div>
+      </article>
 
-    <footer id="footer-root" class="my-6 md:mx-40"></footer>
+      <article class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <img
+          src="images/products/bunnyear/Black01.jpg"
+          alt="Black Bunny Ear Beanie"
+          class="w-full h-52 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Black Bunny Ear Beanie</h2>
+          <p class="text-sm text-gray-600 mb-2">Playful design with a satin-lined interior.</p>
+          <p class="font-medium">$20</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="footer-root" class="mt-10"></footer>
 </body>
-
 </html>
